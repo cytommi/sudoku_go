@@ -17,7 +17,7 @@ type Puzzle struct {
 func NewPuzzle(filePath string) (*Puzzle, error) {
 	file, err := os.Open(filePath)
 	if err != nil {
-		return nil, errors.New("Error when opening puzzle file: " + err.Error())
+		return nil, errors.New("Error when opening the puzzle file: " + err.Error())
 	}
 	defer file.Close()
 
